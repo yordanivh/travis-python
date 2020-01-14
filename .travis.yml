@@ -1,6 +1,7 @@
 language: python
 script:
   -python test_script.py
+  -python script.py
 
 
 
