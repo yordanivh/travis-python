@@ -5,7 +5,9 @@ if [ "${out}" = "Hello world" ]; then
   echo "Everything is OK"
   exit 0
 else
-  echo "Something is WRONG"
+  echo "Failure"
+  echo "Expected output was Hello world"
+  echo "Instead recievd ${out}"
   exit 1
 fi
     
