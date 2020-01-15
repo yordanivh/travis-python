@@ -7,7 +7,7 @@ if [ "${out}" = "Hello world" ]; then
 else
   echo "Failure"
   echo "Expected output was Hello world"
-  echo "Instead recievd ${out}"
+  echo "Instead recieved ${out}"
   exit 1
 fi
     
