@@ -1,9 +1,3 @@
 language: python
 script:
  - bash test_script.sh
- - python script.py
-
-
-
-
-
