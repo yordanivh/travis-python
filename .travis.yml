@@ -1,3 +1,13 @@
 language: python
 script:
- - bash test_script.sh
+- bash test_script.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: BwDgT/lWk4A/TxDld/AJPs/NXsj64hq+Iysnb0W7lZ/eRL1udzib2dl+x0wZtG0w+976PDLaiQWtzJVCwExDUCZ03izSE858AvmFfp8w+25rTzmBqdC+Y3jicwUUaG7+xj+xgC99MDt9b6G4VeKyWSGs89wO3N844XOrGVYitMuFk+RKGV9Q3Cz1HHX73b/wzZWPv6wJxE2WgWpk5Jyml22c4+v0KaoI/89npUFyIc9j4VB03HnKnX6J9JTYb7PCLUc33zJp7UVqzFg5Q2IHOYwQVqL114aDEjiKPWpov1+20JDN/v0QLckttnBCYUT2/Dkw3/Z3SgX2neyherAIFrzFUt47kVouCE7QqMyEx9g8Wuqc4Dd1BwOnMGM7ArXwTgpZu46E5gA3uQu9pCETnyzzePd/uTpzhx2Ru7awFoY2ryhy30Yts0o5ajGgqnOQhchzc12W8z0C1HBcFNoZ3GSkqO9wXbaplWPnRyH0YQllFt3lPGbM75MrhyFYAFCnnwr/at1qMID/tjZur3VG+cV0fRmX1XoltGpDDKPz1afquXAs1dqMQEZdL8AOdJMvIGe7P1E0/9dJToVI/UrNLoxOdAGyJsEyH5DxKm+cyfjUzITRDZkJ9liwANmo5a+TT6itoIJ5d2C+tRApyKdUhj5VQK3eKNWQSwSfj/Rv7H4=
+  file: script.py 
+  on:
+    repo: yordanivh/travis-python
+    branch: new
+    tags: true
