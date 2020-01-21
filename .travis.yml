@@ -9,5 +9,4 @@ deploy:
   file: script.py 
   on:
     repo: yordanivh/travis-python
-    branch: new
     tags: true
